@@ -1,10 +1,19 @@
-<div class="menu">
+<div class="wrapper">
   {{#if session.isAuthenticated}}
-    <a {{action 'invalidateSession'}}>Logout</a>
+    {{main-header renewals=expiring}}
+    {{main-sidebar}}
+
+    <div class="content-wrapper">
+      <section class="content-header" data-test-page-header>
+        <h1>{{title}}<small>{{subTitle}}</small></h1>
+      </section>
+      <section class="content">
+        {{outlet}}
+      </section>
+    </div>
+
+    {{main-footer}}
   {{else}}
-    {{#link-to 'login'}}Login{{/link-to}}
+    {{outlet}}
   {{/if}}
-</div>
-<div class="main">
-  {{outlet}}
 </div>

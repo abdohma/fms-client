@@ -10,6 +10,30 @@ const Router = EmberRouter.extend({
 
 Router.map(function() {
   this.route('login');
+  this.route('renewals');
+  this.route('dashboard');
+  this.route('users');
+  this.route('employees');
+  this.route('buses');
+  this.route('route-allocations');
+  this.route('route-permits');
+  this.route('tires');
+  this.route('tire-allocations');
+
+  this.route('finance', function() {
+    this.route('salary-calculation');
+  });
+
+  this.route('settings', function() {
+    this.route('transaction-categories');
+    this.route('transaction-types');
+  });
+
+  this.route('reports', function() {
+    this.route('daily-income');
+    this.route('tire-dagging');
+    this.route('salary');
+  });
 });
 
 export default Router;

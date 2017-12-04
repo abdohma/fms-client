@@ -1,0 +1,127 @@
+<aside class="main-sidebar" data-test-main-sidebar>
+  <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: auto;">
+    <section class="sidebar">
+      <div class="user-panel">
+        <div class="pull-left image">
+          <img src="/assets/images/thilanka.jpg" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+          <p>Thilanka Niroshana</p>
+          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+        </div>
+      </div>
+      <form action="#" method="get" class="sidebar-form">
+        <div class="input-group">
+          <input type="text" name="q" class="form-control" placeholder="Search...">
+          <span class="input-group-btn">
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                </button>
+              </span>
+        </div>
+      </form>
+      <ul class="sidebar-menu">
+        <li class="header">MAIN NAVIGATION</li>
+        <li>{{#link-to 'dashboard'}}<i class="fa fa-dashboard"></i> <span>Dashboard</span>{{/link-to}}</li>
+        <li>{{#link-to 'users'}}<i class="fa fa-user-plus"></i> <span>Users</span>{{/link-to}}</li>
+        <li>{{#link-to 'employees'}}<i class="fa fa-users"></i> <span>Employees</span>{{/link-to}}</li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-bus"></i>
+            <span>Buses</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li>
+              {{#link-to 'buses'}}<i class="fa fa-circle-o"></i> <span>Bus Management</span>{{/link-to}}
+            </li>
+            <li>
+              {{#link-to 'route-allocations'}}<i class="fa fa-circle-o"></i> <span>Route Allocation</span>{{/link-to}}
+            </li>
+            <li>
+              {{#link-to 'route-permits'}}<i class="fa fa-circle-o"></i> <span>Route Permit</span>{{/link-to}}
+            </li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-soccer-ball-o"></i>
+            <span>Tires</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li>
+              {{#link-to 'tires'}}<i class="fa fa-circle-o"></i> <span>Tire Management</span>{{/link-to}}
+            </li>
+            <li>
+              {{#link-to 'tire-allocations'}}<i class="fa fa-circle-o"></i> <span>Tire Allocation</span>{{/link-to}}
+            </li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-money"></i>
+            <span>Finance</span>
+            <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+          </a>
+          <ul class="treeview-menu">
+            <li>
+              {{#link-to 'renewals'}}<i class="fa fa-circle-o"></i> <span>Renewals</span>{{/link-to}}
+            </li>
+            <li>
+              {{#link-to 'finance.salary-calculation'}}<i class="fa fa-circle-o"></i> <span>Salary Calculation</span>{{/link-to}}
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-cogs"></i>
+                <span>Settings</span>
+                <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+              </a>
+              <ul class="treeview-menu">
+                <li>
+                  {{#link-to 'settings.transaction-categories'}}
+                    <i class="fa fa-circle-o"></i> <span>Transaction Categories</span>
+                  {{/link-to}}
+                </li>
+                <li>
+                  {{#link-to 'settings.transaction-types'}}
+                    <i class="fa fa-circle-o"></i> <span>Transaction Types</span>
+                  {{/link-to}}
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-line-chart"></i>
+            <span>Reports</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li>
+              {{#link-to 'reports.daily-income'}}
+                <i class="fa fa-circle-o"></i> <span>Daily income/expense report</span>
+              {{/link-to}}
+            </li>
+            <li>
+              {{#link-to 'reports.tire-dagging'}}
+                <i class="fa fa-circle-o"></i> <span>Tire dagging report</span>
+              {{/link-to}}
+            </li>
+            <li>
+              {{#link-to 'reports.salary'}}
+                <i class="fa fa-circle-o"></i> <span>Salary report</span>
+              {{/link-to}}
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </div>
+</aside>
