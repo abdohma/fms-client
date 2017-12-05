@@ -12,7 +12,6 @@ Router.map(function() {
   this.route('login');
   this.route('renewals');
   this.route('dashboard');
-  this.route('users');
   this.route('employees');
   this.route('buses');
   this.route('route-allocations');
@@ -33,6 +32,12 @@ Router.map(function() {
     this.route('daily-income');
     this.route('tire-dagging');
     this.route('salary');
+  });
+
+  this.route('users', function() {
+    this.route('new');
+    this.route('edit', { path: ':id' });
+    this.route('show', { path: ':id' });
   });
 });
 
